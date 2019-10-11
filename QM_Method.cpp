@@ -260,7 +260,7 @@ vector<string> duplication(vector<string>& a, vector <string>& b) // remove redu
 	for (iter_b = b.begin(); iter_b != b.end(); iter_b++) {
 		for (iter = c.begin(); iter != c.end();) {
 			if (*iter == *iter_b)
-				iter = c.erase(iter); //중복 제거
+				iter = c.erase(iter); // remove redundancy
 			else
 				iter++;
 		}
